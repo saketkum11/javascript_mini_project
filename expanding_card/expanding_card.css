@@ -27,7 +27,6 @@ body{
     background-repeat:no-repeat ;
     -webkit-transition: all 1000ms ease-in;
 }
-.card:hover{
-    flex: 5;
-  
+.card.active{
+ flex-grow: 5;  
 }

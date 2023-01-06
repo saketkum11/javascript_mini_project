@@ -1,10 +1,14 @@
 const imageCard = document.querySelectorAll(".card");
 
 imageCard.forEach((image) => {
-  console.log(image);
   image.addEventListener("click", () => {
-    console.log("clicked", image);
+    removveClassList();
+    image.classList.add("active");
   });
 });
 
-console.log(imageCard);
+function removveClassList() {
+  imageCard.forEach((image) => {
+    image.classList.remove("active");
+  });
+}
