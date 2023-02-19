@@ -4,13 +4,15 @@ body{
 }
 .background-sliders{
     display: flex;
-    flex-direction: column;
-   
-
 }
 .background-sliders > img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    
+    width: 150px;
+    object-fit: cover; 
+    object-position: top center;
+}
+
+img{
+    max-width: 100%;
+    block-size: auto;
+ 
 }
