@@ -1,0 +1,32 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding:2rem;
+    min-width: 80vw;
+}
+.card{
+    width:5vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5rem;
+    position: relative;
+    background-repeat:no-repeat ;
+    -webkit-transition: all 1000ms ease-in;
+}
+.card.active{
+ flex-grow: 5;  
+}
