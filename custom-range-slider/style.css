@@ -1,0 +1,55 @@
+body {
+  background-color: white;
+}
+.input-range {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.display {
+  background-color: purple;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.input-style {
+  max-width: 100%;
+  width: 500px;
+  position: relative;
+}
+
+input[type="range"] + label {
+  color: black;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  width: 80px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+input[type="range"] {
+  height: 10px;
+  appearance: none;
+  background: purple;
+  border-radius: 1rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  border-radius: 50%;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  cursor: pointer;
+  border: 2px solid purple;
+}
